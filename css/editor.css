@@ -1,0 +1,326 @@
+/* auto-complete-ele */
+
+.auto-complete-ele {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.auto-complete-ele select {
+  position: absolute;
+  z-index: 999;
+  transform: translate(0, 2em);
+  outline: none;
+  display: none;
+}
+
+/* jsonView */
+
+.delete-checkbox {
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+/* .jsonView :hover>.delete{
+visibility: visible;
+} */
+
+.jsonView.object-json-view>.children:hover>.jsonView>.delete-checkbox {
+  visibility: visible;
+}
+
+.jsonView>.rightBracket:hover>.insert,
+.jsonView>.rightBracket:hover>.delete {
+  visibility: visible;
+}
+
+/* collapseObj style */
+
+.jsonView .collapseObj:before {
+  content: '\25B6';
+}
+
+.jsonView .expendObj:before {
+  content: '\25BC';
+}
+
+/* .jsonView .insert:before {
+  content: '\ \+';
+  position: absolute;
+  left: -1em;
+} */
+
+.jsonView .delete:before {
+  content: '\ \-';
+  /* margin-left: 1em; */
+}
+
+.jsonView .insert {
+  /* visibility: hidden; */
+}
+
+.jsonView .delete {
+  visibility: hidden;
+}
+
+/* jsonView */
+
+.jsonView>.expand,
+.jsonView>.name,
+.jsonView>.separator,
+.jsonView .delete,
+.jsonView .insert,
+.jsonView .comma,
+.jsonView .delete-checkbox,
+.jsonView>.children,
+.jsonView>.colorpicker-component,
+.jsonView>.value {
+  display: inline-block;
+}
+
+.jsonView>.rightBracket,
+.jsonView>.leftBracket {
+  /* width: 2em; */
+  /* height: 2em; */
+}
+
+.jsonView {
+  padding-left: 1em;
+  width: 2000px;
+  position: relative;
+  letter-spacing: 0.05em;
+}
+
+.jsonView>.editor-option {
+  width: auto;
+}
+
+.jsonView .insert {
+  min-width: 200px;
+  padding-left: 0;
+  margin-left: 0;
+  line-height: 100%;
+  height: 1em;
+  position: relative;
+}
+
+.jsonView .insert-margin {
+  margin-left: 1.5em;
+}
+
+.jsonView .delete {
+  width: 1.5em;
+  height: 1em;
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+
+.jsonView>.comma {
+  /* float: right; */
+}
+
+/* collapseObj */
+
+.jsonView .collapseObj,
+.jsonView .expendObj {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+/* foot-color */
+
+.jsonView>.name {
+  color: #318495;
+  min-width: 2em;
+  padding: 0 10px;
+  
+}
+
+.jsonView>.value {
+  color: #036a07;
+  margin-right: -1em;
+  min-width: 2em;
+  padding: 0 10px 0 5px;
+}
+
+.jsonView>.object-type {
+  color: #318495;
+}
+
+.jsonView>.array-type {
+  color: #318495;
+}
+
+.jsonView>.rightBracket,
+.jsonView>.leftBracket {
+  color: #2d3c4d;
+}
+
+.jsonView>.object-type {
+  color: #318495;
+}
+
+.jsonView>.color-type {
+  color: #318495;
+}
+
+.jsonView>.bool-type {
+  color: #318495;
+}
+
+.jsonView>.variable-type {
+  color: #318495;
+}
+
+.jsonView>.variable-type {
+  color: #318495;
+}
+
+.jsonView>.variable-val {
+  color: #2d3c4d;
+}
+
+.jsonView>.bool-val {
+  color: #585cf6;
+}
+
+.jsonView>.number-type {
+  color: #318495;
+}
+
+.jsonView>.color-val {
+  color: #1a492b;
+}
+
+.jsonView>.number-val {
+  color: #0000cd;
+}
+
+.jsonView>.date-type {
+  color: #318495;
+}
+
+.jsonView>.date-val {
+  color: rgb(27, 114, 228);
+}
+
+/* active background */
+
+.jsonView .active-background {
+  background-color: rgb(214, 226, 230);
+}
+
+/* insert delete color */
+
+.jsonView .delete:before {
+  color: red;
+}
+
+.jsonView .insert:before {
+  color: chocolate;
+}
+
+/*  insert active input background color */
+
+.jsonView .editor-input {
+  /* background-color: rgb(195, 195, 196); */
+  visibility: visible;
+}
+
+.jsonView .editor-error {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  visibility: visible;
+}
+
+.jsonView {
+  /* font-family: Consolas, monaco, monospace; */
+}
+
+/* font-size */
+
+.jsonView .comma {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.jsonView .separator {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.jsonView .insert:before,
+.jsonView .delete:before {
+  font-size: 1.5em;
+}
+
+.jsonView .collapseObj:before,
+.jsonView .expendObj:before {
+  font-size: 0.8em;
+}
+
+/* editor colorpicker style */
+
+.colorpicker-component {
+  width: 0.8em;
+  height: 0.8em;
+  position: relative;
+  transform: translateY(10%);
+  margin: 0 4px 0 2px;
+}
+
+.colorpicker-component>.input-group-addon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: 0;
+}
+
+.colorpicker-component>.input-group-addon>i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.colorpicker-component .input-group-addon,
+.colorpicker-component .input-group-addon i {
+  width: 100%;
+  height: 100%;
+}
+
+.jsonView .object-json-view {
+  margin-top: 0.5em;
+}
+
+.jsonView .bracket {
+  line-height: 1.5em;
+}
+
+.jsonView .array-json-view {
+  padding-left: 2.5em;
+  margin-top: 0.5em;
+}
+
+.jsonView .anchor {
+  background-color: aliceblue;
+  box-shadow: -100em 0 aliceblue;
+}
+
+/*  */
+
+.jsonView .delete-checkbox-true {
+  text-decoration-line: line-through;
+  text-decoration-color: #000000;
+  visibility: visible;
+}
+
+.jsonView .delete-checkbox-visible {
+  visibility: visible;
+}

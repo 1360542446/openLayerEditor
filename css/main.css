@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'sans-serif' !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.row {
+    position: relative;
+    height: 100%;
+}
+
+.row > div {
+    height: 100%;
+    padding: 0;
+}
+
+/* global style */
+.fa {
+    color: #ffffff;
+}
+
+.ol-map-drag > span > i {
+    color: #ffffff;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+

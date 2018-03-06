@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicons-->
+    <link rel="shortcut icon" href="./image/favicon.png" />
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="image/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="image/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="image/apple-touch-icon-144x144.png" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap-colorpicker/css/bootstrap-colorpicker.css">
+    <!-- user defined -->
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/legacyEditor.css">
+    <link rel="stylesheet" href="./css/editor.css">
+    <title>ThinkGeo Map Suite Vector Map Editor</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" id="map"></div>
+            <div id="sidebar">
+                <div class="menu">
+                    <div class="list-group list-group-first">
+                        <a class="list-group-item logo" href="https://thinkgeo.com" target="_blank" data-placement="right" data-trigger="hover"></a>
+                        <a class="list-group-item menu-list-button" title="" data-toggle="tooltip" data-placement="right" data-trigger="hover"
+                            data-original-title="Layers">
+                            <span class="icons icon-layers"></span>
+                        </a>
+                    </div>
+
+                    <div class="list-group">
+                        <a class="list-group-item user" href="#" title="Sign&nbsp;in/out" data-toggle="tooltip" data-placement="right" data-trigger="hover">
+                            <span class="icons icon-user"></span>
+                        </a>
+                        <a class="list-group-item help" href="#" title="Help" data-toggle="tooltip" data-placement="right" data-trigger="hover">
+                            <span class="icons icon-help"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-2 editor-close-transform" id="editor">
+                <div class="editor-hide-button" title="Show or hide editor" data-toggle="tooltip" data-placement="left" data-trigger="hover">
+                    <span class="editor-hide-button-span icons icon-editor-back"></span>
+                </div>
+                <div class="editor-drag">
+                    <span>⋮</span>
+                </div>
+                <div class="list-group editor-menu">
+                    <a class="list-group-item download" href="#" id="download-file" title="Download StyleJSON" data-toggle="tooltip" data-placement="bottom"
+                        data-trigger="hover">
+                        <span class="icons icon-export"></span>
+                    </a>
+                    <a class="list-group-item upload" id="upload-file" href="#" title="Upload StyleJSON" data-toggle="tooltip" data-placement="bottom"
+                        data-trigger="hover">
+                        <label for="updata-file">
+                            <span class="icons icon-updata"></span>
+                        </label>
+                        <input name="myFile" type="file" id="updata-file" style="display:none" />
+                    </a>
+                </div>
+                <div id="editor-content" class="editor-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./lib/jquery/jquery-3.1.1.min.js"></script>
+    <!-- <script src="./lib/jquery.nicescroll-3.7.6/jquery.nicescroll.min.js"></script> -->
+    <script src="./lib/jquery.nicescroll-3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./styleJson.js"></script>
+    <script src="./lib/map/ol-debug.js"></script>
+    <script src="./lib/map/ol.mapsuite.js"></script>
+    <script src="./lib/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script src="./dist/mainBundle.js"></script>
+    <!-- <script src="./temp/mainBundle.js"></script> -->
+</body>
+
+</html>
